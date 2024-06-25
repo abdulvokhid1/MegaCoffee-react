@@ -12,16 +12,16 @@ const Search = styled("div")(({ theme }) => ({
   marginLeft: 0,
   boxShadow: "2px 2px 2px 1px grey",
   display: "flex",
-  flexDirection: "row"
+  flexDirection: "row",
 }));
 
-const SearchButton = styled("div") (({ theme }) => ({
+const SearchButton = styled("div")(({ theme }) => ({
   width: "45%",
   height: "100%",
   backgroundColor: "grey",
   borderRadius: "30px",
   padding: theme.spacing(0, 2),
-  alignItems: "center", 
+  alignItems: "center",
   justifyContent: "center",
 }));
 
@@ -30,7 +30,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   width: "100%",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft:` calc(1em + ${theme.spacing(2)})`,
+    paddingLeft: ` calc(1em + ${theme.spacing(2)})`,
     transition: theme.transitions.create("width"),
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
@@ -44,18 +44,18 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchBar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-        <Search>
-          <StyledInputBase
-            placeholder="Type here . . ."
-            inputProps={{ "aria-label": "search" }}
-          />
-          <SearchButton>
+      <Search>
+        <StyledInputBase
+          placeholder="Type here . . ."
+          inputProps={{ "aria-label": "search" }}
+        />
+        <SearchButton>
           <IconButton>
             <Typography>Search</Typography>
             <SearchIcon />
           </IconButton>
-          </SearchButton>
-        </Search>
+        </SearchButton>
+      </Search>
     </Box>
   );
 }
