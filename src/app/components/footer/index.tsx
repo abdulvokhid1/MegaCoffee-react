@@ -7,7 +7,7 @@ const Footers = styled.div`
   width: 100%;
   height: 590px;
   display: flex;
-  background: #343434;
+  background: #fdd001;
   background-size: cover;
 `;
 
@@ -19,20 +19,24 @@ export default function Footer() {
       <Container>
         <Stack flexDirection={"row"} sx={{ mt: "94px" }}>
           <Stack flexDirection={"column"} style={{ width: "340px" }}>
-            <Box>
-              <img width={"100px"} src={"/icons/burak.svg"} />
+            <Box border={"1px solid black"}>
+              <img
+                width={"150px"}
+                height={"200px"}
+                src={"/img/mega-logo.png"}
+              />
             </Box>
             <Box className={"foot-desc-txt"}>
               Focusing on the gourmet Turkish breakfast as well as the youth
               society, CZN Burak Gurme aims to bring Turkish cuisine back. CZN
               Burak Gurme creates an illusion with its cuisine.
             </Box>
-            <Box className="sns-context">
+            {/* <Box className="sns-context">
               <img src={"/icons/facebook.svg"} />
               <img src={"/icons/twitter.svg"} />
               <img src={"/icons/instagram.svg"} />
               <img src={"/icons/youtube.svg"} />
-            </Box>
+            </Box> */}
           </Stack>
           <Stack sx={{ ml: "288px" }} flexDirection={"row"}>
             <Stack>

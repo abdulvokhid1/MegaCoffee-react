@@ -96,7 +96,7 @@ export default function Products(props: ProductsProps) {
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className="avatar-big-box">
             <Stack className="top-title">
-              <Box className="top-text">Burak Restaurant</Box>
+              <Box className="top-text">Mega Coffee</Box>
               <Box className="single-search">
                 <input
                   type={"search"}
@@ -158,62 +158,114 @@ export default function Products(props: ProductsProps) {
             <Stack className="product-category">
               <Button
                 variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.COFFEE
-                    ? "primary"
-                    : "secondary"
-                }
+                style={{
+                  color:
+                    productSearch.productCollection === ProductCollection.COFFEE
+                      ? "#fdd001"
+                      : "black",
+                  background:
+                    productSearch.productCollection === ProductCollection.COFFEE
+                      ? "black"
+                      : "#fdd001",
+                }}
+                // color={
+                //   productSearch.productCollection === ProductCollection.COFFEE
+                //     ? "primary"
+                //     : "secondary"
+                // }
                 onClick={() =>
                   searchCollectionHandler(ProductCollection.COFFEE)
                 }
               >
-                .COFFEE
+                COFFEE
               </Button>
               <Button
                 variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.SMOOTHIE
-                    ? "primary"
-                    : "secondary"
-                }
+                style={{
+                  color:
+                    productSearch.productCollection ===
+                    ProductCollection.SMOOTHIE
+                      ? "#fdd001"
+                      : "black",
+                  background:
+                    productSearch.productCollection ===
+                    ProductCollection.SMOOTHIE
+                      ? "black"
+                      : "#fdd001",
+                }}
+                // color={
+                //   productSearch.productCollection === ProductCollection.SMOOTHIE
+                //     ? "primary"
+                //     : "secondary"
+                // }
                 onClick={() =>
                   searchCollectionHandler(ProductCollection.SMOOTHIE)
                 }
               >
-                Salad
+                SMOOTHIE
               </Button>
               <Button
                 variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.JUICE
-                    ? "primary"
-                    : "secondary"
-                }
+                style={{
+                  color:
+                    productSearch.productCollection === ProductCollection.JUICE
+                      ? "#fdd001"
+                      : "black",
+                  background:
+                    productSearch.productCollection === ProductCollection.JUICE
+                      ? "black"
+                      : "#fdd001",
+                }}
+                // color={
+                //   productSearch.productCollection === ProductCollection.JUICE
+                //     ? "primary"
+                //     : "secondary"
+                // }
                 onClick={() => searchCollectionHandler(ProductCollection.JUICE)}
               >
-                Drink
+                JUICE
               </Button>
               <Button
                 variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.TEA
-                    ? "primary"
-                    : "secondary"
-                }
+                style={{
+                  color:
+                    productSearch.productCollection === ProductCollection.TEA
+                      ? "#fdd001"
+                      : "black",
+                  background:
+                    productSearch.productCollection === ProductCollection.TEA
+                      ? "black"
+                      : "#fdd001",
+                }}
+                // color={
+                //   productSearch.productCollection === ProductCollection.TEA
+                //     ? "primary"
+                //     : "secondary"
+                // }
                 onClick={() => searchCollectionHandler(ProductCollection.TEA)}
               >
-                Dessert
+                TEA
               </Button>
               <Button
                 variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.ADE
-                    ? "primary"
-                    : "secondary"
-                }
+                style={{
+                  color:
+                    productSearch.productCollection === ProductCollection.ADE
+                      ? "#fdd001"
+                      : "black",
+                  background:
+                    productSearch.productCollection === ProductCollection.ADE
+                      ? "black"
+                      : "#fdd001",
+                }}
+                // color={
+                //   productSearch.productCollection === ProductCollection.ADE
+                //     ? "primary"
+                //     : "secondary"
+                // }
                 onClick={() => searchCollectionHandler(ProductCollection.ADE)}
               >
-                Other
+                ADE
               </Button>
             </Stack>
             <Stack className="products-wapper">
