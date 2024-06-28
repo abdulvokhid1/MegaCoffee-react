@@ -3,6 +3,7 @@ import { common } from "@mui/material/colors";
 import shadow from "./shadow";
 import typography from "./typography";
 import { maxWidth } from "@mui/system";
+import { rgbToHex } from "@material-ui/core";
 
 /**
  * LIGHT THEME (DEFAULT)
@@ -15,12 +16,12 @@ const light = {
       paper: common.white,
     },
     primary: {
-      contrastText: "#d7b586",
-      main: "#343434",
+      contrastText: "#fdd001",
+      main: "#000000",
     },
     secondary: {
-      contrastText: "#343434",
-      main: "#d7b586",
+      contrastText: "#000000",
+      main: "#fdd001",
     },
     text: {
       primary: "#343434",

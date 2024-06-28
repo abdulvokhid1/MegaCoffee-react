@@ -2,7 +2,8 @@
   width: 100%;
   height: 773px;
   display: flex;
-  background: url("/public/img/son.webp");
+  background: url("/public/img/sonmega.jpg");
+  /* background: url("/public/img/main_mega2.jpg"); */
   background-size: cover;
 }
 
@@ -17,6 +18,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
 }
 
 .home-navbar .navbar-container .menu .brand-logo {
@@ -29,6 +31,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  /* width: 500px; */
 }
 .home-navbar .navbar-container .menu .links .login-button {
   background: #3776cc;
@@ -119,7 +122,7 @@
 }
 
 .home-navbar .navbar-container .detail .signup {
-  margin-top: 73px;
+  margin-top: 173px;
 }
 .home-navbar .navbar-container .detail .signup .signup-button {
   width: 210px;
@@ -151,9 +154,9 @@
 
 .other-navbar {
   width: 100%;
-  height: 400px;
+  height: 600px;
   display: flex;
-  background: url("/public/img/banner.webp");
+  background: url("/public/img/sonmega.jpg");
   background-size: cover;
 }
 
@@ -170,8 +173,8 @@
 }
 
 .other-navbar .navbar-container .menu .brand-logo {
-  height: 30px;
-  width: 125px;
+  height: 300px;
+  width: 400px;
 }
 .other-navbar .navbar-container .menu .links {
   min-width: 700px;

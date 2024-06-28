@@ -12,6 +12,7 @@ import { LoginInput, MemberInput } from "../../../lib/types/member";
 import MemberService from "../../services/MemberService";
 import { sweetErrorHandling } from "../../../lib/sweetAlert";
 import { useGlobals } from "../../hooks/useGlobals";
+import { yellow } from "@mui/material/colors";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -190,14 +191,15 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
           <Stack
             className={classes.paper}
             direction={"row"}
-            sx={{ width: "700px" }}
+            sx={{ width: "700px", background: "#000000" }}
           >
-            <ModalImg src={"/img/auth.webp"} alt="camera" />
+            <ModalImg src={"/img/forlogin.jpeg"} alt="camera" />
             <Stack
               sx={{
                 marginLeft: "65px",
                 marginTop: "25px",
                 alignItems: "center",
+                color: "#fdd001",
               }}
             >
               <h2>Login Form</h2>

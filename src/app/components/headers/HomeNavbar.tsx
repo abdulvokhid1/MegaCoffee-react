@@ -14,8 +14,6 @@ import { CartItem } from "../../../lib/types/search";
 import { useGlobals } from "../../hooks/useGlobals";
 import { serverApi } from "../../../lib/config";
 import { Logout } from "@mui/icons-material";
-import { T } from "../../../lib/types/common";
-import { yellow } from "@mui/material/colors";
 
 interface HomeNavbarProps {
   cartItems: CartItem[];
@@ -61,31 +59,51 @@ export default function HomeNavbar(props: HomeNavbarProps) {
           </Box>
           <Stack className="links">
             <Box className={"hover-line"}>
-              <NavLink to={"/"} activeClassName={"underline"}>
+              <NavLink
+                style={{ color: "#fdd001" }}
+                to={"/"}
+                activeClassName={"underline"}
+              >
                 Home
               </NavLink>
             </Box>
             <Box className={"hover-line"}>
-              <NavLink to={"/products"} activeClassName={"underline"}>
+              <NavLink
+                style={{ color: "#fdd001" }}
+                to={"/products"}
+                activeClassName={"underline"}
+              >
                 Products
               </NavLink>
             </Box>
             {authMember ? (
               <Box className={"hover-line"}>
-                <NavLink to={"/orders"} activeClassName={"underline"}>
+                <NavLink
+                  style={{ color: "#fdd001" }}
+                  to={"/orders"}
+                  activeClassName={"underline"}
+                >
                   Orders
                 </NavLink>
               </Box>
             ) : null}
             {authMember ? (
               <Box className={"hover-line"}>
-                <NavLink to={"/member-page"} activeClassName={"underline"}>
+                <NavLink
+                  style={{ color: "#fdd001" }}
+                  to={"/member-page"}
+                  activeClassName={"underline"}
+                >
                   My Page
                 </NavLink>
               </Box>
             ) : null}
             <Box className={"hover-line"}>
-              <NavLink to={"/help"} activeClassName={"underline"}>
+              <NavLink
+                style={{ color: "#fdd001" }}
+                to={"/help"}
+                activeClassName={"underline"}
+              >
                 Help
               </NavLink>
             </Box>
@@ -99,6 +117,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             {!authMember ? (
               <Box>
                 <Button
+                  style={{ color: "black", background: "#fdd001" }}
                   variant="contained"
                   className="login-button"
                   onClick={() => setLoginOpen(true)}
@@ -155,7 +174,10 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             >
               <MenuItem onClick={handleLogoutRequest}>
                 <ListItemIcon>
-                  <Logout fontSize="small" style={{ color: "blue" }} />
+                  <Logout
+                    fontSize="small"
+                    style={{ color: "black", background: "#fdd001" }}
+                  />
                 </ListItemIcon>
                 Logout
               </MenuItem>
@@ -165,11 +187,12 @@ export default function HomeNavbar(props: HomeNavbarProps) {
         <Stack className="header-frame">
           <Stack className="detail">
             <Box className={"head-main-txt"}></Box>
-            <Box className="wel-txt">The Mega is best choice</Box>
-            <Box className="service-txt">24 hours service</Box>
+            <Box className="wel-txt"></Box>
+            <Box className="service-txt"></Box>
             <Box className="signup">
               {!authMember ? (
                 <Button
+                  style={{ color: "black", background: "#fdd001" }}
                   variant={"contained"}
                   className="signup-button"
                   onClick={() => setSignupOpen(true)}

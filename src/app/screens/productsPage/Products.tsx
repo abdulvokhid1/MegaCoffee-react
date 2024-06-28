@@ -112,7 +112,7 @@ export default function Products(props: ProductsProps) {
 
                 <Button
                   variant={"contained"}
-                  color={"primary"}
+                  style={{ color: "#fdd001", background: "black" }}
                   className="single-button-search"
                   endIcon={<SearchIcon />}
                   onClick={searchProductHandler}
@@ -158,21 +158,11 @@ export default function Products(props: ProductsProps) {
             <Stack className="product-category">
               <Button
                 variant={"contained"}
-                style={{
-                  color:
-                    productSearch.productCollection === ProductCollection.COFFEE
-                      ? "#fdd001"
-                      : "black",
-                  background:
-                    productSearch.productCollection === ProductCollection.COFFEE
-                      ? "black"
-                      : "#fdd001",
-                }}
-                // color={
-                //   productSearch.productCollection === ProductCollection.COFFEE
-                //     ? "primary"
-                //     : "secondary"
-                // }
+                color={
+                  productSearch.productCollection === ProductCollection.COFFEE
+                    ? "primary"
+                    : "secondary"
+                }
                 onClick={() =>
                   searchCollectionHandler(ProductCollection.COFFEE)
                 }
@@ -181,23 +171,11 @@ export default function Products(props: ProductsProps) {
               </Button>
               <Button
                 variant={"contained"}
-                style={{
-                  color:
-                    productSearch.productCollection ===
-                    ProductCollection.SMOOTHIE
-                      ? "#fdd001"
-                      : "black",
-                  background:
-                    productSearch.productCollection ===
-                    ProductCollection.SMOOTHIE
-                      ? "black"
-                      : "#fdd001",
-                }}
-                // color={
-                //   productSearch.productCollection === ProductCollection.SMOOTHIE
-                //     ? "primary"
-                //     : "secondary"
-                // }
+                color={
+                  productSearch.productCollection === ProductCollection.SMOOTHIE
+                    ? "primary"
+                    : "secondary"
+                }
                 onClick={() =>
                   searchCollectionHandler(ProductCollection.SMOOTHIE)
                 }
@@ -206,63 +184,33 @@ export default function Products(props: ProductsProps) {
               </Button>
               <Button
                 variant={"contained"}
-                style={{
-                  color:
-                    productSearch.productCollection === ProductCollection.JUICE
-                      ? "#fdd001"
-                      : "black",
-                  background:
-                    productSearch.productCollection === ProductCollection.JUICE
-                      ? "black"
-                      : "#fdd001",
-                }}
-                // color={
-                //   productSearch.productCollection === ProductCollection.JUICE
-                //     ? "primary"
-                //     : "secondary"
-                // }
+                color={
+                  productSearch.productCollection === ProductCollection.JUICE
+                    ? "primary"
+                    : "secondary"
+                }
                 onClick={() => searchCollectionHandler(ProductCollection.JUICE)}
               >
                 JUICE
               </Button>
               <Button
                 variant={"contained"}
-                style={{
-                  color:
-                    productSearch.productCollection === ProductCollection.TEA
-                      ? "#fdd001"
-                      : "black",
-                  background:
-                    productSearch.productCollection === ProductCollection.TEA
-                      ? "black"
-                      : "#fdd001",
-                }}
-                // color={
-                //   productSearch.productCollection === ProductCollection.TEA
-                //     ? "primary"
-                //     : "secondary"
-                // }
+                color={
+                  productSearch.productCollection === ProductCollection.TEA
+                    ? "primary"
+                    : "secondary"
+                }
                 onClick={() => searchCollectionHandler(ProductCollection.TEA)}
               >
                 TEA
               </Button>
               <Button
                 variant={"contained"}
-                style={{
-                  color:
-                    productSearch.productCollection === ProductCollection.ADE
-                      ? "#fdd001"
-                      : "black",
-                  background:
-                    productSearch.productCollection === ProductCollection.ADE
-                      ? "black"
-                      : "#fdd001",
-                }}
-                // color={
-                //   productSearch.productCollection === ProductCollection.ADE
-                //     ? "primary"
-                //     : "secondary"
-                // }
+                color={
+                  productSearch.productCollection === ProductCollection.ADE
+                    ? "primary"
+                    : "secondary"
+                }
                 onClick={() => searchCollectionHandler(ProductCollection.ADE)}
               >
                 ADE

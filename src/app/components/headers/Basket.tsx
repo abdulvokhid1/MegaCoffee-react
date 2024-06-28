@@ -70,7 +70,7 @@ export default function Basket(props: BasketProps) {
         onClick={handleClick}
       >
         <Badge badgeContent={cartItems.length} color="secondary">
-          <img src={"/icons/shopping-cart.svg"} />
+          <img style={{ color: "yellow" }} src={"/icons/carts2.png"} />
         </Badge>
       </IconButton>
       <Menu

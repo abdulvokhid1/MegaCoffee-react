@@ -48,28 +48,38 @@ export default function OtherNavbar(props: OtherNavbarProps) {
         <Stack className="menu">
           <Box>
             <NavLink to={"/"}>
-              <img className="brand-logo" src="/icons/burak.svg" />
+              <img className="brand-logo" src="/img/mega-logo.png" />
             </NavLink>
           </Box>
           <Stack className="links">
             <Box className={"hover-line"}>
-              <NavLink to={"/"}>Home</NavLink>
+              <NavLink style={{ color: "#fdd001" }} to={"/"}>
+                Home
+              </NavLink>
             </Box>
             <Box className={"hover-line"}>
-              <NavLink to={"/products"}>Products</NavLink>
+              <NavLink style={{ color: "#fdd001" }} to={"/products"}>
+                Products
+              </NavLink>
             </Box>
             {authMember ? (
               <Box className={"hover-line"}>
-                <NavLink to={"/orders"}>Orders</NavLink>
+                <NavLink style={{ color: "#fdd001" }} to={"/orders"}>
+                  Orders
+                </NavLink>
               </Box>
             ) : null}
             {authMember ? (
               <Box className={"hover-line"}>
-                <NavLink to={"/member-page"}>My Page</NavLink>
+                <NavLink style={{ color: "#fdd001" }} to={"/member-page"}>
+                  My Page
+                </NavLink>
               </Box>
             ) : null}
             <Box className={"hover-line"}>
-              <NavLink to={"/help"}>Help</NavLink>
+              <NavLink style={{ color: "#fdd001" }} to={"/help"}>
+                Help
+              </NavLink>
             </Box>
             <Basket
               cartItems={cartItems}
