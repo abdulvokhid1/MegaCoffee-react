@@ -147,7 +147,7 @@
 }
 
 .homepage .new-products-frame .main .card {
-  height: 335px;
+  height: 358px;
   width: 290px;
   cursor: pointer;
 }
@@ -160,7 +160,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ff9200;
+  background: #fdd001;
   box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
   font-family: "Poppins";
@@ -168,18 +168,18 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 21px;
-  color: #f8f8ff;
+  color: #000000;
 }
 
 .homepage .new-products-frame .product-detail {
   width: auto;
-  height: 49px;
+  height: 69px;
   display: flex;
   justify-content: center;
   margin-top: -12px;
   border-top: 1px solid;
   border-color: #f8f8ff;
-  background-color: #fafbfb;
+  background-color: #fdd001;
 }
 .homepage .new-products-frame .product-detail .info {
   width: 100%;

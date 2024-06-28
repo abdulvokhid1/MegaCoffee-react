@@ -96,7 +96,80 @@ export default function Products(props: ProductsProps) {
         <Stack flexDirection={"column"} alignItems={"center"}>
           <Stack className="avatar-big-box">
             <Stack className="top-title">
-              <Box className="top-text">Mega Coffee</Box>
+              <Stack
+                sx={{
+                  width: "420px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "row",
+                  gap: "20px",
+                }}
+                className="product-category"
+              >
+                <Button
+                  variant={"contained"}
+                  color={
+                    productSearch.productCollection === ProductCollection.COFFEE
+                      ? "primary"
+                      : "secondary"
+                  }
+                  onClick={() =>
+                    searchCollectionHandler(ProductCollection.COFFEE)
+                  }
+                >
+                  COFFEE
+                </Button>
+                <Button
+                  variant={"contained"}
+                  color={
+                    productSearch.productCollection ===
+                    ProductCollection.SMOOTHIE
+                      ? "primary"
+                      : "secondary"
+                  }
+                  onClick={() =>
+                    searchCollectionHandler(ProductCollection.SMOOTHIE)
+                  }
+                >
+                  SMOOTHIE
+                </Button>
+                <Button
+                  variant={"contained"}
+                  color={
+                    productSearch.productCollection === ProductCollection.JUICE
+                      ? "primary"
+                      : "secondary"
+                  }
+                  onClick={() =>
+                    searchCollectionHandler(ProductCollection.JUICE)
+                  }
+                >
+                  JUICE
+                </Button>
+                <Button
+                  variant={"contained"}
+                  color={
+                    productSearch.productCollection === ProductCollection.TEA
+                      ? "primary"
+                      : "secondary"
+                  }
+                  onClick={() => searchCollectionHandler(ProductCollection.TEA)}
+                >
+                  TEA
+                </Button>
+                <Button
+                  variant={"contained"}
+                  color={
+                    productSearch.productCollection === ProductCollection.ADE
+                      ? "primary"
+                      : "secondary"
+                  }
+                  onClick={() => searchCollectionHandler(ProductCollection.ADE)}
+                >
+                  ADE
+                </Button>
+              </Stack>
+              {/* <Box className="top-text">Mega Coffee</Box> */}
               <Box className="single-search">
                 <input
                   type={"search"}
@@ -155,67 +228,6 @@ export default function Products(props: ProductsProps) {
             </Button>
           </Stack>
           <Stack className="list-category-section">
-            <Stack className="product-category">
-              <Button
-                variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.COFFEE
-                    ? "primary"
-                    : "secondary"
-                }
-                onClick={() =>
-                  searchCollectionHandler(ProductCollection.COFFEE)
-                }
-              >
-                COFFEE
-              </Button>
-              <Button
-                variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.SMOOTHIE
-                    ? "primary"
-                    : "secondary"
-                }
-                onClick={() =>
-                  searchCollectionHandler(ProductCollection.SMOOTHIE)
-                }
-              >
-                SMOOTHIE
-              </Button>
-              <Button
-                variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.JUICE
-                    ? "primary"
-                    : "secondary"
-                }
-                onClick={() => searchCollectionHandler(ProductCollection.JUICE)}
-              >
-                JUICE
-              </Button>
-              <Button
-                variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.TEA
-                    ? "primary"
-                    : "secondary"
-                }
-                onClick={() => searchCollectionHandler(ProductCollection.TEA)}
-              >
-                TEA
-              </Button>
-              <Button
-                variant={"contained"}
-                color={
-                  productSearch.productCollection === ProductCollection.ADE
-                    ? "primary"
-                    : "secondary"
-                }
-                onClick={() => searchCollectionHandler(ProductCollection.ADE)}
-              >
-                ADE
-              </Button>
-            </Stack>
             <Stack className="products-wapper">
               {products.length !== 0 ? (
                 products.map((product: Product) => {
@@ -307,19 +319,23 @@ export default function Products(props: ProductsProps) {
         </Stack>
       </Container>
       <div className="brands-logo">
-        <Box className="brand-text">Our Family Brands</Box>
+        <Box className="brand-text">Our Popular Menu</Box>
         <Stack className="brand-cards">
           <Box className="brand-card">
-            <img src="/img/gurme.webp" alt="" />
+            <img src="/img/watermelon.jpg" alt="" />
+            <div className="brand-img-desc">Watermelon Juice</div>
           </Box>
           <Box className="brand-card">
-            <img src="/img/seafood.webp" alt="" />
+            <img src="/img/unincorn.jpg" alt="" />
+            <div className="brand-img-desc">Unicorn Magic Ade</div>
           </Box>
           <Box className="brand-card">
-            <img src="/img/sweets.webp" alt="" />
+            <img src="/img/cherry.jpg" alt="" />
+            <div className="brand-img-desc">Cherry Coke</div>
           </Box>
           <Box className="brand-card">
-            <img src="/img/doner.webp" alt="" />
+            <img src="/img/megaade.jpg" alt="" />
+            <div className="brand-img-desc">Mega Ade</div>
           </Box>
         </Stack>
       </div>

@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 .products-page .products .avatar-big-box .top-title .top-text {
   color: #343434;
@@ -78,10 +78,11 @@
 }
 
 .products-page .products .list-category-section .product-category {
-  display: flex;
-  gap: 50px;
+  /* display: flex;
+  gap: 150px;
   padding-top: 40px;
   width: 78px;
+  height: 200px; */
 }
 
 .products-page .products .list-category-section .product-category button {
@@ -239,14 +240,14 @@
 }
 
 .products-page .products .brands-logo {
-  background: #0d1518;
+  background: #fdd001;
   width: 100%;
   height: 630px;
   margin-top: 67px;
 }
 
 .products-page .products .brands-logo .brand-text {
-  color: #e3c08d;
+  color: #000000;
   font-family: Roboto;
   font-size: 36px;
   font-style: normal;
@@ -262,11 +263,23 @@
   height: 350px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #0d1518;
-  box-shadow: 0px 0px 22px 0px #e4d4d4;
+  /* background: #0d1518; */
+  /* box-shadow: 0px 0px 22px 0px #e4d4d4; */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+.products-page .products .brands-logo .brand-card .brand-img-desc {
+  color: #000000;
+  font-weight: 900;
+  height: 40px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
 }
 .products-page .products .brands-logo .brand-cards {
   display: flex;
