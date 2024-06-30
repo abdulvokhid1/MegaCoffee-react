@@ -137,7 +137,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
             direction={"row"}
             sx={{ width: "800px" }}
           >
-            <ModalImg src={"/img/auth.webp"} alt="camera" />
+            <ModalImg src={"/img/forlogin.jpeg"} alt="camera" />
             <Stack sx={{ marginLeft: "69px", alignItems: "center" }}>
               <h2>Signup Form</h2>
               <TextField
@@ -164,7 +164,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <Fab
                 sx={{ marginTop: "30px", width: "120px" }}
                 variant="extended"
-                color="primary"
+                color="secondary"
                 onClick={handleSignupRequest}
               >
                 <LoginIcon sx={{ mr: 1 }} />
@@ -191,7 +191,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
           <Stack
             className={classes.paper}
             direction={"row"}
-            sx={{ width: "700px", background: "#000000" }}
+            sx={{ width: "700px", background: "white" }}
           >
             <ModalImg src={"/img/forlogin.jpeg"} alt="camera" />
             <Stack
@@ -221,7 +221,7 @@ export default function AuthenticationModal(props: AuthenticationModalProps) {
               <Fab
                 sx={{ marginTop: "27px", width: "120px" }}
                 variant={"extended"}
-                color={"primary"}
+                color={"secondary"}
                 onClick={handleLoginRequest}
               >
                 <LoginIcon sx={{ mr: 1 }} />

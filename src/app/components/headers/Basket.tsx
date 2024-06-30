@@ -175,6 +175,7 @@ export default function Basket(props: BasketProps) {
                 onClick={proceedOrderHandler}
                 startIcon={<ShoppingCartIcon />}
                 variant={"contained"}
+                color="secondary"
               >
                 Order
               </Button>

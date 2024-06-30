@@ -60,7 +60,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
           <Stack className="links">
             <Box className={"hover-line"}>
               <NavLink
-                style={{ color: "#fdd001" }}
+                style={{ color: "#000000" }}
                 to={"/"}
                 activeClassName={"underline"}
               >
@@ -69,7 +69,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             </Box>
             <Box className={"hover-line"}>
               <NavLink
-                style={{ color: "#fdd001" }}
+                style={{ color: "#000000" }}
                 to={"/products"}
                 activeClassName={"underline"}
               >
@@ -79,7 +79,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             {authMember ? (
               <Box className={"hover-line"}>
                 <NavLink
-                  style={{ color: "#fdd001" }}
+                  style={{ color: "#000000" }}
                   to={"/orders"}
                   activeClassName={"underline"}
                 >
@@ -90,7 +90,7 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             {authMember ? (
               <Box className={"hover-line"}>
                 <NavLink
-                  style={{ color: "#fdd001" }}
+                  style={{ color: "#000000" }}
                   to={"/member-page"}
                   activeClassName={"underline"}
                 >
@@ -100,11 +100,11 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             ) : null}
             <Box className={"hover-line"}>
               <NavLink
-                style={{ color: "#fdd001" }}
+                style={{ color: "#000000" }}
                 to={"/help"}
                 activeClassName={"underline"}
               >
-                Help
+                Contact
               </NavLink>
             </Box>
             <Basket

@@ -54,6 +54,7 @@ export default function PopularDishes() {
                             textColor="#fff"
                             fontSize={"lg"}
                             mb={1}
+                            sx={{ color: "black" }}
                           >
                             {ele.productName}
                           </Typography>
@@ -83,9 +84,11 @@ export default function PopularDishes() {
                           px: "var(--Card-padding)",
                           borderTop: "1px solid",
                           height: "60px",
+                          background: "#fdd001",
                         }}
                       >
                         <Typography
+                          sx={{ color: "#000000" }}
                           startDecorator={<DescriptionOutlinedIcon />}
                           textColor={"neutral.300"}
                         >

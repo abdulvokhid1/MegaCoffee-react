@@ -206,6 +206,7 @@ export default function Products(props: ProductsProps) {
             >
               New
             </Button>
+
             <Button
               variant={"contained"}
               className="order"
@@ -339,7 +340,7 @@ export default function Products(props: ProductsProps) {
           </Box>
         </Stack>
       </div>
-      <div className="address">
+      {/* <div className="address">
         <Container>
           <Stack className="address-area">
             <Box className="title">Our address</Box>
@@ -351,7 +352,7 @@ export default function Products(props: ProductsProps) {
             ></iframe>
           </Stack>
         </Container>
-      </div>
+      </div> */}
     </div>
   );
 }

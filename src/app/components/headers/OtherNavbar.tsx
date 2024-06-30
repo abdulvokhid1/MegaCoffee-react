@@ -78,7 +78,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
             ) : null}
             <Box className={"hover-line"}>
               <NavLink style={{ color: "#fdd001" }} to={"/help"}>
-                Help
+                Contact
               </NavLink>
             </Box>
             <Basket
@@ -92,6 +92,7 @@ export default function OtherNavbar(props: OtherNavbarProps) {
               <Box>
                 <Button
                   variant="contained"
+                  color="secondary"
                   className="login-button"
                   onClick={() => setLoginOpen(true)}
                 >

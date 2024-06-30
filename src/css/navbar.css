@@ -154,10 +154,10 @@
 
 .other-navbar {
   width: 100%;
-  height: 600px;
+  height: 200px;
   display: flex;
-  background: url("/public/img/sonmega.jpg");
-  background-size: cover;
+  /* background: url("/public/img/sonmega.jpg"); */
+  /* background-size: cover; */
 }
 
 .other-navbar .navbar-container {
@@ -184,8 +184,8 @@
   flex-direction: row;
 }
 .other-navbar .navbar-container .menu .links .login-button {
-  background: #3776cc;
-  color: #f8f8ff;
+  /* background: #3776cc;
+  color: #f8f8ff; */
 }
 .other-navbar .navbar-container .menu .user-avatar {
   width: 50px;
@@ -244,7 +244,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #d7b586;
+  background: #fdd001;
   border-width: 1px 0px;
   border-style: solid;
   border-color: #343434;
@@ -285,7 +285,7 @@
   font-weight: 600;
   font-size: 15px;
   line-height: 22px;
-  color: #ae0000;
+  color: #000000;
 }
 
 .basket-info-box
