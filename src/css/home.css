@@ -78,7 +78,7 @@
 }
 .homepage .popular-dishes-frame .popular-section .cards-frame .card {
   min-height: 430px;
-  min-width: 400px;
+  min-width: 320px;
   cursor: pointer;
 }
 .homepage
